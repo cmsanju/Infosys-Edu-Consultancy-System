@@ -1,0 +1,107 @@
+/* Card for Add Payment Form */
+.admin-container-payment-list {
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* Sidebar takes 1 column, content takes 4 columns */
+    gap: 20px; 
+    grid-template-areas: "sidebar content"; /* Define grid layout areas */
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('/src/assets/admindashboard2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.payment-form-card {
+    position: absolute; 
+    top: 150px; 
+    left: 55%;
+    transform: translateX(-50%); /* Center the card horizontally */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 400px;
+    z-index: 10; /* Ensure the card appears above other content */
+}
+
+/* Card Heading */
+.card-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+/* Form Styling */
+.payment-form-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form-card form div {
+    margin-bottom: 15px;
+}
+
+
+.payment-form-card form input,
+.payment-form-card form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+     /* Limit width to 280px for consistency */
+    color: grey;
+    margin-top: 5px; 
+}
+
+/* Button Styling */
+.payment-form-card form button {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.payment-form-card form button[type="button"] {
+    background-color: #f44336; /* Cancel button style */
+}
+
+/* Table container */
+.payment-list-table table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.payment-list-table th,
+.payment-list-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.payment-list-table th {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+/* Buttons inside table for actions */
+.payment-list-table button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #28a745; /* Edit button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.payment-list-table button:nth-child(2) {
+    background-color: #dc3545; /* Delete button */
+}

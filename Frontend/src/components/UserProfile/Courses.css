@@ -1,0 +1,74 @@
+/* Container styles */
+.courser {
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .ncourse {
+
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #212EA0;
+    font-weight: 700;
+    text-align: center; 
+      padding: 10px 0; /* Add padding for some space around the text */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  text-transform: uppercase;
+  }
+  
+  /* Grid container */
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual card styles */
+  .course {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Course image */
+  .course img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Course title */
+  .course h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #212EA0;
+  }
+  
+  /* Course description */
+  .course p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  /* Price styles */
+  .course p:last-child {
+    font-weight: bold;
+    
+    margin-top: 10px;
+  }
+  

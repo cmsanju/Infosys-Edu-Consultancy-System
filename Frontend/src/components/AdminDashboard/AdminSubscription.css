@@ -1,0 +1,124 @@
+/* Subscription form card */
+.admin-container-subscription-list {
+    display: grid;
+    grid-template-columns: 1fr 4fr; 
+    gap: 20px; 
+    grid-template-areas: 
+      "sidebar content"; /* Define grid layout areas */
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('/src/assets/admindashboard2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+
+.subscription-form-card {
+    position: absolute;
+    top: 200px;
+    left: 55%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 400px;
+    z-index: 10;
+}
+
+/* Form styling */
+.subscription-form-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-form-card form .input-container {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Input and select styling */
+.subscription-form-card form input,
+.subscription-form-card form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    color: grey;
+}
+.subscription-list-heading {
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subscription-list-heading button {
+    padding: 8px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Form buttons styling */
+.form-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subscription-form-card form button {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.subscription-form-card form button[type="button"] {
+    background-color: #f44336; /* Cancel button style */
+}
+
+/* Table styling */
+.subscription-list-table table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.subscription-list-table th,
+.subscription-list-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.subscription-list-table th {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+/* Buttons inside table for actions */
+.subscription-list-table button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #28a745; /* Edit button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.subscription-list-table button:nth-child(2) {
+    background-color: #dc3545; /* Delete button */
+}

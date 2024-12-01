@@ -1,0 +1,75 @@
+
+.admin-container {
+    width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('/src/assets/admindashboard2.jpg');
+  background-size:cover ;
+  background-position: center;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .admin-content {
+    margin-bottom: 125px;
+    margin-left: 125px;
+
+  }
+  .admin-sidebar-container {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .admin-sidebar-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-sidebar-container ul li {
+    padding: 20px;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .admin-sidebar-container ul li:hover {
+    background-color: #444;
+  }
+  
+  .admin-sidebar-container .sidebar-toggle {
+    display: none;
+  }
+  
+  /* Styling for content inside admin */
+  .admin-content {
+    text-align:center;
+    max-width: 800px;
+  }
+  .admin-content h1{
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .admin-content p{
+    font-size:18px;
+  }
+  @media (max-width: 768px) {
+    .admin-container {
+      flex-direction: column;
+    }
+  
+    .admin-sidebar-container {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .admin-content {
+      margin-left: 0;
+    }
+}  
